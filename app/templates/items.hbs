@@ -6,7 +6,9 @@
 			<ul>
 				{{#each items as |item|}}
           {{#draggable-object tagName="li" content=item}}
-						{{item.title}}
+						{{#link-to "items.detail" item.id}}
+							{{item.title}}
+						{{/link-to}}
 					{{/draggable-object}}
         {{/each}}
 			</ul>
@@ -20,3 +22,4 @@
 
 	</div>
 </div>
+{{outlet}}

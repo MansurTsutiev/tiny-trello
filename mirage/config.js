@@ -3,6 +3,7 @@ export default function() {
   this.get('/items', (schema, request) => {
     return schema.items.all();
   });
+  this.post('/items');
 
 
   // These comments are here to help you get started. Feel free to delete them.

@@ -1,5 +1,19 @@
 export default function() {
 
+  this.get('/items', () => {
+    return {
+      "data": {
+        "type": "items",
+        "id": "1",
+        "attributes": {
+          "title": "Some",
+          "list": "Some1"
+        }
+      }
+    }
+  });
+
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

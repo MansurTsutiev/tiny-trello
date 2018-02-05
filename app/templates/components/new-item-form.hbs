@@ -1,3 +1,10 @@
 <footer>
-  Add an item...
+  {{#if clicked}}
+    <form class="" onsubmit={{action "saveItem"}}>
+      {{input placeholder="New Item" value=title autofocus=true}}
+      <button type="submit" class="btn btn-success">Save</button>
+    </form>
+  {{else}}
+    <a href="javascript:;" onclick={{action "toggleForm"}}>Add an item...</a>
+  {{/if}}
 </footer>

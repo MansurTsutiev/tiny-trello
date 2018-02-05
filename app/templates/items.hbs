@@ -10,7 +10,7 @@
 					{{/draggable-object}}
         {{/each}}
 			</ul>
-				{{new-item-form}}
+				{{new-item-form list=list onsubmit=(action "saveItem")}}
 		{{/draggable-object-target}}
 		{{/each-in}}
 

@@ -1,13 +1,15 @@
 <div class="ui">
 	<div class="lists">
+		{{#each-in (group-by "list" model) as |list items|}}
 		<div class="list">
-			<header>List header</header>
+			<header>{{list}}</header>
 			<ul>
-				{{#each model as |item|}}
+				{{#each items as |item|}}
           <li>{{item.title}}</li>
         {{/each}}
 			</ul>
 			<footer>Add a card...</footer>
 		</div>
+		{{/each-in}}
 	</div>
 </div>

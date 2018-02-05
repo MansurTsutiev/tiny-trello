@@ -101,3 +101,41 @@ body {
     }
   }
 }
+.add-list-button {
+  padding: 10px;
+  background-color: #e2e4e6;
+  /* height: 19px; */
+  text-align: left;
+  font-size: 0.9em;
+  color: black;
+  border: none;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #8fb1e0;
+    color: white;
+    cursor: pointer;
+  }
+}
+.list-dimension {
+  border-radius: 3px;
+  margin: 10px;
+  width: 300px;
+  margin-top: 30px;
+  width: $list-width;
+}
+
+.form-control {
+  font: inherit;
+  display: block;
+  border-radius: 0.2rem;
+  width: 100%;
+  border: #e8e8e8 solid 1px;
+  background: #f8f8f8;
+  padding: 0.5rem;
+  color: #4a6064;
+}
+
+.new-list {
+  background-color: #E3E4E6;
+  padding: 10px;
+}

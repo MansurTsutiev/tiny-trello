@@ -1,0 +1,13 @@
+{{#if clicked}}
+
+{{else}}
+  <button class="add-list-button list-dimension">Add a list...</button>
+{{/if}}
+
+<form class="list-dimension new-list">
+  {{input class="form-control" placeholder="New List Name" value=list autofocus=true}}
+  <br>
+  {{input class="form-control" placeholder="New Card Title" value=title autofocus=true}}
+  <br>
+  <button class="btn btn-success" type="button" onclick={{action "toggleNewList"}}>Submit</button>
+</form>

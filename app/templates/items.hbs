@@ -1,15 +1,17 @@
 <div class="ui">
 	<div class="lists">
 		{{#each-in (group-by "list" model) as |list items|}}
-		<div class="list">
+		{{#draggable-object-target class="list" action=(action "updateItem" list)}}
 			<header>{{list}}</header>
 			<ul>
 				{{#each items as |item|}}
-          <li>{{item.title}}</li>
+          {{#draggable-object tagName="li" content=item}}
+						{{item.title}}
+					{{/draggable-object}}
         {{/each}}
 			</ul>
 				<footer>Add an item...</footer>
-		</div>
+		{{/draggable-object-target}}
 		{{/each-in}}
 
 		<div class="">

@@ -4,7 +4,7 @@ export default function() {
     return schema.items.all();
   });
   this.post('/items');
-
+  this.patch('/items/:id');
 
   // These comments are here to help you get started. Feel free to delete them.
 

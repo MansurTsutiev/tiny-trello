@@ -6,6 +6,11 @@ export default Controller.extend({
       let card = this.store.createRecord('item', {title, list});
 
       card.save();
+    },
+    updateItem(list, item) {
+      console.log(item);
+      item.set('list', list);
+      item.save();
     }
   }
 });

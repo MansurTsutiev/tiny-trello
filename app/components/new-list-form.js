@@ -5,7 +5,7 @@ export default Component.extend({
     save(e) {
       e.preventDefault();
 
-      this.onsubmit(this.list, this.title);
+      this.onsubmit(this.title, this.list);
       this.set('list', '');
       this.set('title', '');
     }

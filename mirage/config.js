@@ -1,16 +1,7 @@
 export default function() {
 
-  this.get('/items', () => {
-    return {
-      "data": {
-        "type": "items",
-        "id": "1",
-        "attributes": {
-          "title": "Some",
-          "list": "Some1"
-        }
-      }
-    }
+  this.get('/items', (schema, request) => {
+    return schema.items.all();
   });
 
 

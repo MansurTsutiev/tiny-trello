@@ -5,6 +5,10 @@ export default Component.extend({
     save(e) {
       e.preventDefault();
       this.onsubmit(this.description);
+    },
+    deleteItem(e) {
+      e.preventDefault();
+      this.onclick();
     }
   }
 });

@@ -1,12 +1,4 @@
 {{#modal-dialog translucentOverlay=true}}
-  <div class="row">
-    <div class="col-7">
-      <h4 class="">{{model.title}}</h4>
-    </div>
-    <div class="col">
-      {{#link-to "items" class="btn btn_close"}}Close{{/link-to}}
-      <button class="btn btn_close" onclick={{action "deleteItem"}}>Delete</button>
-    </div>
-  </div>
-  {{edit-item-form description=(readonly model.description) onsubmit=(action "updateItem")}}
+
+  {{edit-item-form title=(readonly model.title) description=(readonly model.description) onsubmit=(action "updateItem") onclick=(action "deleteItem")}}
 {{/modal-dialog}}

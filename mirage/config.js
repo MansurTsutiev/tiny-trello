@@ -1,6 +1,6 @@
 export default function() {
 
-  this.get('/items', (schema, request) => {
+  this.get('/items', (schema) => {
     return schema.items.all();
   });
   this.get('/items/:id');

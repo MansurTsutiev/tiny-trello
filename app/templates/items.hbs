@@ -5,13 +5,13 @@
 			<header>{{list}}</header>
 			<ul>
 					{{#each items as |item|}}
-					{{#if item.title}}
-	          {{#draggable-object tagName="li" content=item}}
-							{{#link-to "items.detail" item.id}}
-								{{item.title}}
-							{{/link-to}}
-						{{/draggable-object}}
-					{{/if}}
+						{{#if item.title}}
+		          {{#draggable-object tagName="li" content=item}}
+								{{#link-to "items.detail" item.id}}
+									{{item.title}}
+								{{/link-to}}
+							{{/draggable-object}}
+						{{/if}}
 	        {{/each}}
 				{{new-item-form list=list onsubmit=(action "saveItem")}}
 			</ul>

@@ -1,4 +1,17 @@
-{{bs-button title="Show Modal" clicked="show"}}
-    {{#bs-modal name="myModal" fade=true footerButtonsBinding="myModalButtons" title="My Modal"}}
-        <p>Modal content!</p>
-    {{/bs-modal}}
+{{#modal-dialog translucentOverlay=true}}
+  <div class="row">
+    <div class="col-7">
+      <h4 class="">Title</h4>
+    </div>
+    <div class="col">
+      {{#link-to "items" class="btn btn_close"}}Close{{/link-to}}
+      <button class="btn btn_close">Delete</button>
+    </div>
+
+
+  </div>
+  <form class="" >
+    {{textarea placeholder="Long Description" class="form-control textarea" value=title autofocus=true}}
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+{{/modal-dialog}}

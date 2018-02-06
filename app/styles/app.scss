@@ -1,4 +1,6 @@
 @import "ember-cli-bootstrap-4/bootstrap";
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
 
 #board {
   color: white;
@@ -138,4 +140,21 @@ body {
 .new-list {
   background-color: #E3E4E6;
   padding: 10px;
+}
+
+.ember-modal-dialog {
+  width: 500px;
+  height: 300px;
+}
+.textarea {
+  height: 100px;
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+.btn_close {
+  float: right;
+  color: #2355AD;
+}
+.btn_close:hover {
+  color: #7eacfc;
 }

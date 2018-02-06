@@ -9,18 +9,22 @@ export default function(server) {
 
   server.create('item', {
     title: 'Ruby',
-    list: 'BackLog'
+    list: 'BackLog',
+    description: 'Description 1'
   });
   server.create('item', {
     title: 'Rails',
-    list: 'BackLog'
+    list: 'BackLog',
+    description: 'Description 2'
   });
   server.create('item', {
     title: 'Ember',
-    list: 'Next'
+    list: 'Next',
+    description: 'Description 3'
   });
   server.create('item', {
     title: 'Bloomberg',
-    list: 'Next'
+    list: 'Next',
+    description: 'Description 4'
   });
 }

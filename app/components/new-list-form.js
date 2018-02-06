@@ -8,6 +8,9 @@ export default Component.extend({
       this.onsubmit(this.title, this.list);
       this.set('list', '');
       this.set('title', '');
+    },
+    toggleForm() {
+      this.set('clicked', true);
     }
   }
 });

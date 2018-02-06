@@ -174,5 +174,19 @@ body {
   margin-bottom: 5px;
   font-size: 1em;
 }
-.new_item_input {
+.add_list {
+  background: rgba(53, 122, 246, 0.5);
+  color: white;
+  margin-top: 30px;
+  width: $list-width - 30px;
+  height: 40px;
+  a {
+    float: left;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+}
+.add_list:hover {
+  background: rgb(53, 122, 246);
 }

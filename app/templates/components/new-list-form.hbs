@@ -1,11 +1,19 @@
-  <header>New List</header>
-  <form class="" onsubmit={{action "save"}}>
-    {{input class="form-control" placeholder="New Card Title" value=title autofocus=true}}
-    <br>
-    {{input class="form-control" placeholder="New List Name" value=list autofocus=true}}
-    <br>
-    <button class="btn btn-success" type="submit">Submit</button>
-  </form>
+{{#if clicked}}
+  <div class="list">
+    <header>New List</header>
+    <form class="" onsubmit={{action "save"}}>
+      {{input class="form-control" placeholder="New Card Title" value=title autofocus=true}}
+      <br>
+      {{input class="form-control" placeholder="New List Name" value=list autofocus=true}}
+      <br>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  </div>
+{{else}}
+  <div class="add_list">
+    <a href="javascript:;" class="" onclick={{action "toggleForm"}}>Add a list..</a>
+  </div>
+{{/if}}
 
   <!-- Add if else
 

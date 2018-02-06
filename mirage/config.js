@@ -3,6 +3,7 @@ export default function() {
   this.get('/items', (schema, request) => {
     return schema.items.all();
   });
+  this.get('/items/:id');
   this.post('/items');
   this.patch('/items/:id');
 

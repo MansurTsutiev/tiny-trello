@@ -6,6 +6,7 @@ export default Component.extend({
       e.preventDefault();
 
       this.onsubmit(this.title, this.list);
+      this.set('clicked', false);
       this.set('list', '');
       this.set('title', '');
     },

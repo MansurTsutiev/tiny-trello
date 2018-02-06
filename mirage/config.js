@@ -6,6 +6,7 @@ export default function() {
   this.get('/items/:id');
   this.post('/items');
   this.patch('/items/:id');
+  this.del('/items/:id');
 
   // These comments are here to help you get started. Feel free to delete them.
 

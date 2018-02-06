@@ -7,7 +7,7 @@ export default Component.extend({
     },
     saveItem(e) {
       e.preventDefault();
-      this.onsubmit(this.title, this.list);
+      this.onsubmit(this.list, this.title);
       this.set('title', '');
       this.set('clicked', false);
     }

@@ -1,4 +1,7 @@
 {{#modal-dialog translucentOverlay=true}}
-
-  {{edit-item-form title=(readonly model.title) description=(readonly model.description) onsubmit=(action "updateItem") onclick=(action "deleteItem")}}
+  {{edit-item-form
+    title=(readonly model.title)
+    description=(readonly model.description)
+    onsubmit=(action "updateItem")
+    onclick=(action "deleteItem")}}
 {{/modal-dialog}}

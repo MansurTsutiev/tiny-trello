@@ -1,13 +1,13 @@
+<form class="" onsubmit={{action "save"}}>
 <div class="row">
   <div class="col-7">
-    <h4 class="">{{title}}</h4>
+    {{input class="form-control" value=title}}
   </div>
   <div class="col">
     {{#link-to "items" class="btn btn_close"}}Close{{/link-to}}
     <button class="btn btn_close" onclick={{action "deleteItem"}}>Delete</button>
   </div>
 </div>
-<form class="" onsubmit={{action "save"}}>
   {{textarea placeholder="Long Description" class="form-control textarea" value=description autofocus=true}}
   <button type="submit" class="btn btn-success">Save</button>
 </form>

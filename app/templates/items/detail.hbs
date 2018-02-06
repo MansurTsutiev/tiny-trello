@@ -8,8 +8,5 @@
       <button class="btn btn_close" onclick={{action "deleteItem"}}>Delete</button>
     </div>
   </div>
-  <form class="" >
-    {{textarea placeholder="Long Description" class="form-control textarea" value=model.description autofocus=true}}
-    <button type="submit" class="btn btn-success">Save</button>
-  </form>
+  {{edit-item-form description=(readonly model.description) onsubmit=(action "updateItem")}}
 {{/modal-dialog}}

@@ -2,9 +2,10 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
   actions: {
-    updateItem(list, description) {
-      this.model.setProperties({list, title, description});
+    updateItem(description) {
+      this.model.setProperties({description: description});
       this.model.save();
+      this.transitionToRoute('items');
     },
     deleteItem() {
       this.model.destroyRecord()

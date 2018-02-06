@@ -8,6 +8,8 @@
 .board {
   margin:0 auto;
   font-size: 1.5;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 /* Some Sass variables */
 // Layout
@@ -28,7 +30,7 @@ $list-bg-color: #e2e4e6;
 
 body {
   margin: 0;
-
+  font-family: Arial;
   font-size: 14px;
   line-height: 1.3em;
 }
@@ -81,6 +83,9 @@ body {
     border-bottom-left-radius: $list-border-radius;
     border-bottom-right-radius: $list-border-radius;
     color: #888;
+    a {
+      color: grey;
+    }
   }
 
   ul {
@@ -100,6 +105,11 @@ body {
       border-radius: $card-border-radius;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 
+      a {
+        color: black;
+        font-family: Arial;
+      }
+
     }
   }
 }
@@ -118,13 +128,14 @@ body {
     cursor: pointer;
   }
 }
+/*
 .list-dimension {
   border-radius: 3px;
   margin: 10px;
   width: 300px;
   margin-top: 30px;
   width: $list-width;
-}
+}*/
 
 .form-control {
   font: inherit;
@@ -136,11 +147,11 @@ body {
   padding: 0.5rem;
   color: #4a6064;
 }
-
+/*
 .new-list {
   background-color: #E3E4E6;
   padding: 10px;
-}
+}*/
 
 .ember-modal-dialog {
   width: 500px;
@@ -157,4 +168,11 @@ body {
 }
 .btn_close:hover {
   color: #7eacfc;
+}
+.btn-success {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+.new_item_input {
 }

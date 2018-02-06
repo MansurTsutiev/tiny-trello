@@ -11,12 +11,12 @@
 						{{/link-to}}
 					{{/draggable-object}}
         {{/each}}
-			</ul>
 				{{new-item-form list=list onsubmit=(action "saveItem")}}
+			</ul>
 		{{/draggable-object-target}}
 		{{/each-in}}
 
-		<div class="">
+		<div class="list">
 			{{new-list-form onsubmit=(action "saveItem")}}
 		</div>
 

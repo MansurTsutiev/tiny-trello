@@ -1,8 +1,8 @@
 <footer>
   {{#if clicked}}
-    <form class="" onsubmit={{action "saveItem"}}>
-      {{input placeholder="New Item" value=title autofocus=true}}
-      <button type="submit" class="btn btn-success">Save</button>
+    <form class="new_item_input" onsubmit={{action "saveItem"}}>
+      {{input placeholder="New Item" class="form-control new_item_input" value=title autofocus=true}}
+      <button type="submit" class="btn btn-success">Add</button>
     </form>
   {{else}}
     <a href="javascript:;" onclick={{action "toggleForm"}}>Add an item...</a>

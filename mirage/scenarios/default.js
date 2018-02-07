@@ -9,7 +9,5 @@ export default function(server) {
 
   server.create('item', {
     list: 'Default List',
-    title: "Some Title",
-    description: ''
   });
 }

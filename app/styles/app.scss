@@ -175,3 +175,21 @@ body {
 .add_list:hover {
   background: rgb(53, 122, 246);
 }
+.invisible {
+  display: none;
+}
+.confirm {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+
+  h3 {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .btn-primary {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100px;
+  }
+}

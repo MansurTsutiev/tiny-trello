@@ -1,11 +1,17 @@
-<form class="" onsubmit={{action "save"}}>
+<div id="confirmation" class={{if clicked 'confirm' 'invisible'}}>
+  <h3>Are you sure?</h3>
+  <button class="btn btn-primary" onclick={{action "deleteItem"}}>Yes</button>
+  {{#link-to "items" class="btn btn-primary"}}Close{{/link-to}}
+</div>
+
+<form class={{if confirming 'invisible'}} onsubmit={{action "save"}}>
 <div class="row">
   <div class="col-7">
     {{input class="form-control" value=title}}
   </div>
   <div class="col">
     {{#link-to "items" class="btn btn_close"}}Close{{/link-to}}
-    <button class="btn btn_close" onclick={{action "deleteItem"}}>Delete</button>
+    <a href="" class="btn btn_close" onclick={{action "confirmDeletion"}}>Delete</a>
   </div>
 </div>
   {{textarea placeholder="Long Description" class="form-control textarea" value=description autofocus=true}}

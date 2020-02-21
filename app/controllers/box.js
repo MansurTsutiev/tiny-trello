@@ -1,0 +1,3 @@
+function play() {
+ alert('wow');
+ }
